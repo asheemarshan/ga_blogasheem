@@ -1,0 +1,12 @@
+{% for post in site.posts %}
+    <li><a href="{{post.url}}">{{ post.title }}</a></li>
+{% endfor %}
+
+<h2>
+
+    {{site.data.people.name}}
+</h2>
+{% for file in site.static_files %}
+{{  file.extname }}
+<img src="{{file}}"/>
+{% endfor %}
